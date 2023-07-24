@@ -1,0 +1,67 @@
+Experiments
+Spell correct text before input.
+
+Features Applicable to All Elements
+spelling_correctness
+grammatical_correctness       #can we get?
+noun_count_scaled
+adjective_count_scaled
+verb_count_scaled
+comma_count_scaled
+discourse_index_in_essay
+connector_count                     #examples of each category below: https://www.dlsweb.rmit.edu.au/lsu/content/4_WritingSkills/writing_tuts/linking_LL/sentence.html
+connector_conjunction_count         #for, and, nor, but, or, yet and so
+connector_subordinators_count       #because, if, although, unless and many others
+connector_logical_count             #however, therefore, on the other hand, and many others.
+conjunctions_after_connector        #e.g. $1 because $2, $3, and $4
+
+Element Specific Features
+
+Lead
+includes_statistic             # does it contain numbers or words representing numbers
+includes_quotation             # does it contains quotations
+includes_description
+grabs_attention                #no idea how to extract.  Proxy, includes statistics, exclamation marks, questions?
+scaled_adjective_count
+references_essay_topic
+is_a_question
+num_chars_from_start            #note, may need to be num chars since blank line, as a subset of essays have titles
+
+Position
+references_essay_topic
+includes_literal_word_opinion
+
+
+Claim
+references_position_topic
+references_essay_topic
+
+Counterclaim
+references_a_prior_claim_topic
+references_essay_topic
+
+Rebuttal
+references_directly_prior_counterclaim_topic
+references_essay_topic
+
+Evidence
+references_prior_topics
+references_essay_topic
+includes_statistic             # does it contain numbers or words representing numbers
+includes_quotation             # does it contains quotations
+
+Concluding Statement
+includes_summary_language         #"In Conclusion", "To Sum up", "concluding", ...
+num_chars_after_until_EOF         #Distance from endIndex in essay to the EOF.  Concluding statements should be at the end
+
+
+
+Data Transform Experiments
+discourse_element_spelling_corrected
+
+
+Goal: Extract the features above, run corr plot for each discourse element.
+
+
+
+

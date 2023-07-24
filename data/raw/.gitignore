@@ -1,0 +1,6 @@
+# Ignore all files in this dir
+**
+
+# keep
+!.gitignore
+!feedback-prize-effectiveness.zip

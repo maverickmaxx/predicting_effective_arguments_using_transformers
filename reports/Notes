@@ -1,0 +1,11 @@
+Adequate 80%
+Effective 69%
+Ineffective 19.8%
+
+200~AutoModel.from_pretrained(BASE_MODEL, num_hidden_layers=BERT_LAYERS, return_dict=True) '
+
+num_hidden_layers
+
+
+Dr. Teneva wants to review balanced accuracy numbers.  
+How well are we predicting the underrepresented classes.
